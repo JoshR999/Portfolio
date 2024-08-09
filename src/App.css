@@ -1,0 +1,151 @@
+body {
+  background-color: #090302;
+  /* background-image: url(../public/stars.gif); */
+  margin: 1em;
+}
+/*Navigation*/
+.brandName {
+  color: #02ffe1;
+}
+
+.brandName:hover {
+  color: #64A6BD;
+}
+
+.dropButton {
+  background-color: #64A6BD;
+  width: 2em;
+  height: 2em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #565254; 
+  border-radius: 10px 1px;
+  transition: all 0.5s ease-out;
+}
+
+.dropButton.active {
+  transform: rotate(225deg);
+  background-color: #EB8A90;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #F8F991;
+  border-radius: 1px 10px;
+}
+
+.dropButton::after{
+  display: none;
+}
+
+.dropMenu {
+
+  position: absolute;
+  top: 100%;
+  background-color: #565254;
+  border: 1px solid #F8F991;
+  opacity: 0;
+  transform: translateY(-1em);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.dropMenu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-1em);
+  transition: all 0.5s ease-out;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu .dropdown-item {
+  opacity: 0;
+  transform: translateY(-1em);
+  animation: slide 0.5s forwards;
+}
+
+.dropdown-item {
+  color: #FFFDF7;
+}
+
+.dropdown-item:hover {
+  background-color: #EB8A90;
+}
+
+.dropdown-menu .dropdown-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.dropdown-menu .dropdown-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dropdown-menu .dropdown-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Splash.js styles */
+.splashWelcome {
+  color: #EB8A90;
+}
+
+.splashText {
+  color: #F8F991;
+}
+
+/* Projects.js styles */
+.projectsHeader {
+  color: #64A6BD;
+}
+/* About.js styles */
+.aboutHeader {
+  color: #EB8A90;
+}
+
+.aboutText {
+  color:#F8F991;
+}
+
+.groupedItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #565254;
+  border: 2px solid #FFFDF7;
+  width: 10em;
+  height: 5em;
+}
+/* Contact.js styles */
+.contactHeader {
+  color: #F8F991;
+}
+
+.cardStyle {
+  width: 10em;
+  background-color: #565254;
+}
+
+.cardTitleStyle {
+  color: #64A6BD;
+}
+
+.contactButton {
+  background-color: #64A6BD;
+}
