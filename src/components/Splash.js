@@ -1,20 +1,65 @@
 import React from "react";
-import Container from "react-bootstrap/Container"
+import { Container, Row, Col } from "react-bootstrap";
 
 function Splash(){
     
 
     return (
         <Container fluid>
-            <main className="mt-5 d-flex flex-column justify-content-center align-items-center">
-                <h3 className="splashWelcome">
-                    Welcome to my portfolio page.
-                </h3>
-                <h4 className="splashText">
-                    Here you can take a look at my past projects, about me, and how to contact me.
-                </h4>
-            </main>
-            
+            <h2 className="splashHeader text-center mt-5">
+                Welcome to my Portfolio Page!
+            </h2>
+            <Row>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+                <Col md="auto">
+                    <h3 className="splashText">
+                        Here you can find my past projects, about me, and my contact links!
+                    </h3>
+                </Col>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+                <Col>
+                    <h2 className="splashBlank">
+                        |
+                    </h2>
+                </Col>
+            </Row>
         </Container>
     )
 }

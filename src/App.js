@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Checkmate from './components/Checkmate';
 import MovieMind from './components/MovieMind';
+import Error404 from './components/Error404';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/projects/MovieMind' element={<MovieMind />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<Error404 />} />
         </Routes>
       </Router>
     </div>

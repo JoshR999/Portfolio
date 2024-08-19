@@ -19,8 +19,13 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: #565254; 
-  border-radius: 10px 1px;
+  border-radius: 20px;
   transition: all 0.5s ease-out;
+}
+
+.dropButton:hover {
+  background-color: #F8F991;
+  border-color: #64A6BD;
 }
 
 .dropButton.active {
@@ -29,7 +34,7 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: #F8F991;
-  border-radius: 1px 10px;
+  border-radius: 0;
 }
 
 .dropButton::after{
@@ -101,12 +106,16 @@ body {
 }
 
 /* Splash.js styles */
-.splashWelcome {
-  color: #EB8A90;
+.splashHeader {
+  color: #F8F991;
 }
 
 .splashText {
-  color: #F8F991;
+  color: #64A6BD;
+}
+
+.splashBlank {
+  color: black;
 }
 
 /* Projects.js styles */
@@ -148,4 +157,11 @@ body {
 
 .contactButton {
   background-color: #64A6BD;
+}
+
+/* Error404.js styles */
+.errorHomeBtn {
+  position: absolute;
+  top: 80%;
+  left: 80%;
 }
