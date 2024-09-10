@@ -1,12 +1,11 @@
 body {
-  background-color: #090302;
-  /* background-image: url(../public/stars.gif); */
-  margin: 1em;
+  background-color: #e5e4e2;
+  margin: 0;
+  padding: 0;
+  
 }
 /*Navigation*/
-.brandName {
-  color: #02ffe1;
-}
+
 
 .brandName:hover {
   color: #64A6BD;
@@ -117,6 +116,7 @@ body {
 .splashBlank {
   color: black;
 }
+
 
 /* Projects.js styles */
 .projectsHeader {
