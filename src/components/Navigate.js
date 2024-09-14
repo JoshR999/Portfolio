@@ -8,7 +8,7 @@ function Navigate(){
 
     return (
         <Container fluid className="navigationBar">
-            <Navbar sticky="top" className="d-flex justify-content-between">
+            <Navbar className="d-flex justify-content-between">
                 <Navbar.Brand href="/" className="brandName fs-2">Joshua Rivera</Navbar.Brand>
                 <Dropdown onToggle={toggleMenu} show={showMenu} align="end">
                     <Dropdown.Toggle as="button" onClick={toggleMenu} className={`dropButton ${showMenu ? 'active' : ''}`}>

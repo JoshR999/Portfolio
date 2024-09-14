@@ -5,7 +5,11 @@ body {
   
 }
 /*Navigation*/
-
+.navigationBar {
+  background: rgb(red, green, blue, 0.5);
+  position: fixed;
+  z-index: 1000;
+}
 
 .brandName:hover {
   color: #64A6BD;
@@ -115,6 +119,10 @@ body {
 
 .splashBlank {
   color: black;
+}
+
+#splashCanvas {
+  z-index: 1;
 }
 
 
